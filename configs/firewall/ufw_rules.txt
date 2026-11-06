@@ -1,0 +1,16 @@
+Status: active
+Logging: on (low)
+Default: deny (incoming), allow (outgoing), disabled (routed)
+New profiles: skip
+
+To                         Action      From
+--                         ------      ----
+22/tcp                     ALLOW IN    Anywhere                   # SSH Administracion
+80/tcp                     ALLOW IN    Anywhere                   # HTTP Servidor Web
+445/tcp                    ALLOW IN    Anywhere                   # Samba Archivos
+631/tcp                    ALLOW IN    Anywhere                   # CUPS Impresion
+22/tcp (v6)                ALLOW IN    Anywhere (v6)              # SSH Administracion
+80/tcp (v6)                ALLOW IN    Anywhere (v6)              # HTTP Servidor Web
+445/tcp (v6)               ALLOW IN    Anywhere (v6)              # Samba Archivos
+631/tcp (v6)               ALLOW IN    Anywhere (v6)              # CUPS Impresion
+

@@ -1,0 +1,7 @@
+# Excluir secretos, certificados privados y respaldos pesados
+*.env
+*.key
+*.pem
+*secret*
+*.sql.gz
+*.tar.gz
