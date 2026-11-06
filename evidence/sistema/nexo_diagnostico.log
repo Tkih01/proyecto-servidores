@@ -1,0 +1,57 @@
+=== REPORTE DE DIAGNOSTICO NEXOCOMERCIAL (2026-11-06T14:48:23-06:00) ===
+--- 1. ESTADO DE SERVICIOS ---
+apache2   : inactive
+inactivo
+mariadb   : active
+smbd      : active
+cups      : active
+ssh       : active
+--- 2. USO DE DISCO Y MEMORIA ---
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1        19G  1.9G   16G  11% /
+/dev/sda1        19G  1.9G   16G  11% /
+/dev/sda1        19G  1.9G   16G  11% /
+               total        used        free      shared  buff/cache   available
+Mem:            1973         437         969           3         716        1536
+Swap:           1100           0        1100
+--- 3. PUERTOS EN ESCUCHA ---
+Netid State  Recv-Q Send-Q                         Local Address:Port  Peer Address:Port
+udp   UNCONN 0      0                                 10.0.2.255:137        0.0.0.0:*   
+udp   UNCONN 0      0                                  10.0.2.15:137        0.0.0.0:*   
+udp   UNCONN 0      0                             192.168.10.255:137        0.0.0.0:*   
+udp   UNCONN 0      0                              192.168.10.10:137        0.0.0.0:*   
+udp   UNCONN 0      0                                    0.0.0.0:137        0.0.0.0:*   
+udp   UNCONN 0      0                                 10.0.2.255:138        0.0.0.0:*   
+udp   UNCONN 0      0                                  10.0.2.15:138        0.0.0.0:*   
+udp   UNCONN 0      0                             192.168.10.255:138        0.0.0.0:*   
+udp   UNCONN 0      0                              192.168.10.10:138        0.0.0.0:*   
+udp   UNCONN 0      0                                    0.0.0.0:138        0.0.0.0:*   
+udp   UNCONN 0      0                                    0.0.0.0:5353       0.0.0.0:*   
+udp   UNCONN 0      0                                    0.0.0.0:45655      0.0.0.0:*   
+udp   UNCONN 0      0                                    0.0.0.0:53         0.0.0.0:*   
+udp   UNCONN 0      0                                    0.0.0.0:67         0.0.0.0:*   
+udp   UNCONN 0      0                                  10.0.2.15:68         0.0.0.0:*   
+udp   UNCONN 0      0                                       [::]:5353          [::]:*   
+udp   UNCONN 0      0                                       [::]:39333         [::]:*   
+udp   UNCONN 0      0      [fd17:625c:f037:2:a00:27ff:feb8:7939]:546           [::]:*   
+udp   UNCONN 0      0      [fd17:625c:f037:2:ce30:9454:386:64e0]:546           [::]:*   
+udp   UNCONN 0      0         [fe80::9615:f85c:450c:2baa]%enp0s3:546           [::]:*   
+udp   UNCONN 0      0                                       [::]:53            [::]:*   
+tcp   LISTEN 0      80                                 127.0.0.1:3306       0.0.0.0:*   
+tcp   LISTEN 0      128                                  0.0.0.0:22         0.0.0.0:*   
+tcp   LISTEN 0      32                                   0.0.0.0:53         0.0.0.0:*   
+tcp   LISTEN 0      50                                   0.0.0.0:139        0.0.0.0:*   
+tcp   LISTEN 0      50                                   0.0.0.0:445        0.0.0.0:*   
+tcp   LISTEN 0      128                                     [::]:22            [::]:*   
+tcp   LISTEN 0      32                                      [::]:53            [::]:*   
+tcp   LISTEN 0      50                                      [::]:139           [::]:*   
+tcp   LISTEN 0      50                                      [::]:445           [::]:*   
+--- 4. ULTIMOS REGISTROS DE ERROR ---
+Nov 06 14:29:28 SRV-CORE systemd-ssh-generator[4290]: Failed to query local AF_VSOCK CID: Cannot assign requested address
+Nov 06 14:29:28 SRV-CORE (sd-exec-[4282]: /usr/lib/systemd/system-generators/systemd-ssh-generator failed with exit status 1.
+Nov 06 14:29:28 SRV-CORE systemd-ssh-generator[4332]: Failed to query local AF_VSOCK CID: Cannot assign requested address
+Nov 06 14:29:28 SRV-CORE (sd-exec-[4324]: /usr/lib/systemd/system-generators/systemd-ssh-generator failed with exit status 1.
+Nov 06 14:29:29 SRV-CORE (sd-exec-[4356]: /usr/lib/systemd/system-generators/systemd-ssh-generator failed with exit status 1.
+Nov 06 14:29:29 SRV-CORE systemd-ssh-generator[4364]: Failed to query local AF_VSOCK CID: Cannot assign requested address
+Nov 06 14:37:40 SRV-CORE systemd-ssh-generator[4849]: Failed to query local AF_VSOCK CID: Cannot assign requested address
+Nov 06 14:37:40 SRV-CORE (sd-exec-[4841]: /usr/lib/systemd/system-generators/systemd-ssh-generator failed with exit status 1.

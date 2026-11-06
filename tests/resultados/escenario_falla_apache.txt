@@ -1,0 +1,3 @@
+Escenario: Falla controlada de servicio web (Apache/2.4.69 en Debian)
+Resultado HTTP tras recuperacion: HTTP/1.1 200 OK
+Tiempo total de deteccion y recuperacion (RTO real): 54 segundos
